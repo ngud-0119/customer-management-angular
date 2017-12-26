@@ -1,0 +1,11 @@
+<div *ngIf="member">
+  <h2>{{member.name}}</h2>
+  <div>
+    <label>id: </label>{{member.id}}
+  </div>
+  <div>
+    <label>name: </label>
+    <input type="text" [(ngModel)]="member.name" placeholder="名前を入力">
+  </div>
+</div>
+<button (click)="goBack()">戻る</button>

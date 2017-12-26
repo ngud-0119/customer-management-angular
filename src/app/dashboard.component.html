@@ -1,0 +1,8 @@
+<h3>役員一覧</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let member of members" [routerLink]="['/detail', member.id]" class="col-1-4">
+    <div class="module member">
+      <h4>{{member.name}}</h4>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.members {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.members li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  background-color: #EEE;
+}
+.members li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.members li:hover {
+  left: .1em;
+  background-color: #DDD;
+  color: #507D8B;
+}
+.members .text {
+  position: relative;
+  top: -3px;
+}
+.members .badge {
+  display: inline-block;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  padding: 0.8em 0.7em 0 0.7em;
+  border-radius: 4px 0 0 4px;
+  font-size: small;
+  background-color: #607D8B;
+  color: white;
+}

@@ -1,7 +1,13 @@
 <h2>社員一覧</h2>
+<div>
+  <label>社員名 : </label>
+  <input type="text" #memberName>
+  <button (click)="add(memberName.value); memberName.value=''">追加</button>
+</div>
 <ul class="members">
   <li *ngFor="let member of members" (click)="onSelect(member)" [class.selected]="member === selectedMember">
     <span class="badge">{{member.id}}</span> {{member.name}}
+    <button class="delete" (click)="delete(member); $event.stopPropagation()">x</button>
   </li>
 </ul>
 <div *ngIf="selectedMember">

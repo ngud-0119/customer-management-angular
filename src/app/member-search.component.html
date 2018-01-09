@@ -1,0 +1,9 @@
+<div id="search-component">
+  <h4>社員検索</h4>
+  <input type="text" #searchBox id="search-box" (keyup)="search(searchBox.value)">
+  <div>
+    <div *ngFor="let member of members | async" (click)="gotoDetail(member)" class="search-result">
+      {{ member.name }}
+    </div>
+  </div>
+</div>
